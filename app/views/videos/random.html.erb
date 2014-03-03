@@ -1,0 +1,8 @@
+<h1>How much time can you waste?</h1>
+<a href="/?duration=short">1 minute</a>
+<a href="/?duration=medium">5 minutes</a>
+<a href="/?duration=long">More than 5 minutes</a>
+
+<h2>This video's length is <%= @video.duration %></h2>
+<% id = @video.link.split("v=")[1]%>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/<%= id %>" frameborder="0" allowfullscreen></iframe>
